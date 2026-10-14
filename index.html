@@ -219,7 +219,7 @@ body:not(.con-lateral) .fija .top{padding-left:44px}
 .fija .cabeza .idiomas{top:calc(50% + 32px)}
 @media (max-width:900px){.cabeza .idiomas,.fija .cabeza .idiomas{position:static;margin:10px auto 0;width:fit-content}}
 @media (min-width:901px){
-  .top{flex-direction:row;align-items:center;justify-content:flex-start;gap:22px;position:static}
+  .top{flex-direction:row;align-items:center;justify-content:center;gap:22px;position:static}
   .cabeza{position:static}
   .fija .marca,.top .marca{align-self:center}
   .cabeza .reloj-top{right:28px;top:50%;transform:translateY(-50%)}
@@ -282,6 +282,18 @@ main>section h2,.oficio>div>h3{text-transform:uppercase}
 .aviso-fecha{color:var(--muted);font-size:14px}
 .hero .video{align-self:center;width:100%;max-width:760px;aspect-ratio:16/9;border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.18);background:var(--ink)}
 .hero .video iframe{display:block;width:100%;height:100%;border:0}
+.hero{padding-bottom:14px}
+main{padding-top:14px}
+.hero{padding-top:14px}
+@media (min-width:901px){
+  .top .mark,.fija .mark{font-size:clamp(34px,3.6vw,54px)}
+  .top .mark span,.fija .mark span{font-size:clamp(10px,1.05vw,14px)}
+  .top .brand img,.fija .brand img{width:96px;height:96px}
+  .fija .reloj-top{padding:5px 10px}
+  .fija .reloj-fecha{font-size:12.5px}
+  .fija .reloj-hora{font-size:17px}
+}
+@media (min-width:901px){body:not(.con-lateral) .fija .top{padding-left:0}}
 </style>
 </head>
 <body>
@@ -521,7 +533,7 @@ main>section h2,.oficio>div>h3{text-transform:uppercase}
         <div class="cols">
           <ul class="lista">
             <li>I.A. (Inteligencia Artificial)
-              <ul><li>Claude</li><li>Claude Code</li><li>Gemini</li><li>Cursor</li><li>Codex</li><li>Copilot</li></ul>
+              <ul><li>Claude</li><li>Claude Code</li><li>Gemini</li><li>Cursor</li><li>Codex</li><li>Copilot</li><li>NotebookLM</li></ul>
             </li>
           </ul>
           <ul class="lista">
